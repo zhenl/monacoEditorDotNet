@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace monacoEditorDotNet.Pages;
 
-public class PrivacyModel : PageModel
+public class CompareModel : PageModel
 {
-    private readonly ILogger<PrivacyModel> _logger;
+    private readonly ILogger<CompareModel> _logger;
 
-    public PrivacyModel(ILogger<PrivacyModel> logger)
+    public CompareModel(ILogger<CompareModel> logger)
     {
         _logger = logger;
     }

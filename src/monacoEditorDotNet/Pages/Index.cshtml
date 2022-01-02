@@ -8,11 +8,18 @@
 
 @section Scripts
 {
-    <script>
-        monaco.editor.create(document.getElementById('container'), {
-            value: "<html></html>",
-            language: 'html'
+<script>
+    $(document).ready(function () {
+        require.config({ paths: { 'vs': '/lib/vs' } });
+        var editor = monaco.editor.create(document.getElementById('container'), {
+            value: "function sayHello(){\n console.write('Hello World');\n}",
+            language: 'javascript',
+            lineNumbers: 'on',
+            roundedSelection: false,
+            scrollBeyondLastLine: false,
+            readOnly: false,
+            theme: 'vs-dark'
         });
-        
-    </script>
+    })
+</script>
 }
