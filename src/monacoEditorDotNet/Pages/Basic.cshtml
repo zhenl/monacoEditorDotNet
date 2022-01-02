@@ -1,0 +1,20 @@
+@page
+@model BasicModel
+@{
+    ViewData["Title"] = "基本功能";
+}
+<h1>@ViewData["Title"]</h1>
+<div id="container" style="width:800px;height:600px;border:1px solid grey"></div>
+
+@section Scripts
+{
+<script>
+    $(document).ready(function () {
+        require.config({ paths: { 'vs': '/lib/vs' } });
+        monaco.editor.create(document.getElementById('container'), {
+            value: "function sayHello(){\n console.write('Hello World');\n}",
+            language: 'javascript'
+        });
+    })
+</script>
+}
