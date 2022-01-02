@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="container" style="width:800px;height:600px;border:1px solid grey"></div>
+
+@section Scripts
+{
+    <script>
+        monaco.editor.create(document.getElementById('container'), {
+            value: "<html></html>",
+            language: 'html'
+        });
+        
+    </script>
+}
