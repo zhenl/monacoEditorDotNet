@@ -1,0 +1,32 @@
+@page
+@model CustomLanguageModel
+@{
+    ViewData["Title"] = "自定义语言";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div id="container" style="height: 800px"></div>
+
+@section Scripts
+{
+<script>
+    $(document).ready(function () {
+        require.config({ paths: { 'vs': '/lib/vs' } });
+
+        monaco.languages.setMonarchTokensProvider('cc', {
+            tokenizer: {
+                root: [
+                    [/\d+/, { token: "keyword" }],
+                    [/[a-z]+/, { token: "string" }]
+                ],
+            }
+        });
+
+        monaco.editor.create(document.getElementById('container'), {
+            value: "test1111test2222",
+            language: 'cc'
+        });
+    })
+</script>
+}

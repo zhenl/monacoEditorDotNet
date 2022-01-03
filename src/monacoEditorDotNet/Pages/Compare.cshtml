@@ -13,11 +13,11 @@
 <script>
     require.config({ paths: { 'vs': '/lib/vs' } });
     var originalModel = monaco.editor.createModel(
-        'This line is removed on the right.\njust some text\nabcd\nefgh\nSome more text',
+        '删除行\n行一\n行二\n行三内容\n更多内容',
         'text/plain'
     );
     var modifiedModel = monaco.editor.createModel(
-        'just some text\nabcz\nzzzzefgh\nSome more text.\nThis line is removed on the left.',
+        '\n行一\n行二\n行三\n更多内容\n增加行',
         'text/plain'
     );
 
