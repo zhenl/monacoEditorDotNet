@@ -1,18 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace monacoEditorDotNet.Pages;
-
-public class CustomLanguageModel : PageModel
+namespace monacoEditorDotNet.Pages
 {
-    private readonly ILogger<CustomLanguageModel> _logger;
-
-    public CustomLanguageModel(ILogger<CustomLanguageModel> logger)
+    public class CustomLanguageModel : PageModel
     {
-        _logger = logger;
-    }
-
-    public void OnGet()
-    {
+        public void OnGet()
+        {
+        }
     }
 }

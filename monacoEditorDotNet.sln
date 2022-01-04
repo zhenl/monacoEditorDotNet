@@ -1,19 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B3C3391-620D-46CE-9EB3-2FD6C24E9896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monacoEditorDotNet", "src\monacoEditorDotNet\monacoEditorDotNet.csproj", "{987C79E7-A203-4688-A60D-4E8C48B92279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "monacoEditorDotNet", "src\monacoEditorDotNet\monacoEditorDotNet.csproj", "{987C79E7-A203-4688-A60D-4E8C48B92279}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{987C79E7-A203-4688-A60D-4E8C48B92279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -21,7 +18,13 @@ Global
 		{987C79E7-A203-4688-A60D-4E8C48B92279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{987C79E7-A203-4688-A60D-4E8C48B92279}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{987C79E7-A203-4688-A60D-4E8C48B92279} = {4B3C3391-620D-46CE-9EB3-2FD6C24E9896}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {724A6AD1-6996-4A98-AEE3-D4384ABF367C}
 	EndGlobalSection
 EndGlobal
